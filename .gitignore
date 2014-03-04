@@ -1,0 +1,8 @@
+target
+reports
+.idea
+minFraud-api.iml
+minFraud-api.ipr
+minFraud-api.iws
+.classpath
+.project
