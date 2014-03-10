@@ -15,6 +15,7 @@ import java.util.Map;
 public class RiskScoreResponse implements Serializable, Cloneable {
     private static final long serialVersionUID = 1L;
 
+    private String rawResponse;
     private BigDecimal riskScore;
     private GeoIpDetails geoIpDetails;
     private ProxyDetails proxyDetails;
@@ -42,6 +43,14 @@ public class RiskScoreResponse implements Serializable, Cloneable {
         r.addressPhoneDetails = AddressPhoneDetails.extract(values);
         r.accountDetails = AccountDetails.extract(values);
         return r;
+    }
+
+    public String getRawResponse() {
+        return rawResponse;
+    }
+
+    public void setRawResponse(String rawResponse) {
+        this.rawResponse = rawResponse;
     }
 
     public BigDecimal getRiskScore() {
