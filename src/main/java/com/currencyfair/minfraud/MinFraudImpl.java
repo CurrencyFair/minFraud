@@ -52,6 +52,7 @@ public class MinFraudImpl implements MinFraud {
                 String responseValues = EntityUtils.toString(resp.getEntity(), Consts.ISO_8859_1);
                 LOG.trace("minFraud response: {}", responseValues);
                 RiskScoreResponse riskScore = RiskScoreResponse.extract(parseValueMap(responseValues));
+                riskScore.setRawResponse(responseValues);
                 return riskScore;
             } else {
                 throw new IOException("Unexpected response code from remote: " + statusCode);

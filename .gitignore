@@ -1,8 +1,8 @@
 target
 reports
 .idea
-minFraud-api.iml
-minFraud-api.ipr
-minFraud-api.iws
+minFraud.iml
+minFraud.ipr
+minFraud.iws
 .classpath
 .project
