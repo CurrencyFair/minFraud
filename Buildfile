@@ -8,7 +8,7 @@ COMMONS_LANG3 = 'org.apache.commons:commons-lang3:jar:3.1'
 HTTPCLIENT = transitive('org.apache.httpcomponents:httpclient:jar:4.3.2')
 EASYMOCK = 'org.easymock:easymock:jar:3.2'
 
-VERSION_NUMBER = '1.0.1-SNAPSHOT'
+VERSION_NUMBER = '1.0.2-SNAPSHOT'
 
 define 'minFraud' do
   project.version = VERSION_NUMBER
